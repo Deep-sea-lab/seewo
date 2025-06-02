@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>希沃白板大乱炖 - 官网</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F5F5F5;
+            color: #333333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: #FFFFFF;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #2E7D32;
+            transform: scale(1.05);
+        }
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .feature-card {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .faq-item {
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 1rem;
+            background-color: #FFFFFF;
+        }
+        .faq-answer {
+            display: none;
+            padding: 1rem;
+            background-color: #F5F5F5;
+        }
+        .faq-question:hover {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+        }
+        .footer {
+            background-color: #2E7D32;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <section class="hero text-center py-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">希沃白板大乱炖</h1>
+        <p class="text-xl mb-6">一键定制你的希沃白板，解锁无限创意！</p>
+        <a href="#download" class="btn-primary text-white font-semibold py-3 px-6 rounded-lg">立即下载（密码1029）</a>
+    </section>
+
+    <!-- 功能介绍 -->
+    <section class="section">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">核心功能</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="feature-card p-6 text-center">
+                <h3 class="text-xl font-semibold text-green-600 mb-2">一键安装</h3>
+                <p>简单输入信息，自动替换资源，快速完成希沃白板定制。</p>
+            </div>
+            <div class="feature-card p-6 text-center">
+                <h3 class="text-xl font-semibold text-green-600 mb-2">个性化启动</h3>
+                <p>自定义 banner 和配置，打造专属白板体验。</p>
+            </div>
+            <div class="feature-card p-6 text-center">
+                <h3 class="text-xl font-semibold text-green-600 mb-2">管理员权限</h3>
+                <p>自动请求管理员权限，确保安装顺畅无阻。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区 -->
+    <section id="download" class="section bg-white">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">下载与安装</h2>
+        <div class="text-center">
+            <p class="mb-4">下载“希沃白板大乱炖”安装器，解锁白板新玩法！</p>
+            <a href="https://deep-sea.lanzn.com/iTdu42xuxuqf" class="btn-primary text-white font-semibold py-3 px-6 rounded-lg">下载安装器（蓝奏云）</a>
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold mb-2">安装步骤</h3>
+                <ol class="text-left max-w-md mx-auto">
+                    <li>1. 下载并解压安装器包。</li>
+                    <li>2. 确保 swenlauncher.exe 在安装器同目录。</li>
+                    <li>3. 运行程序，自动请求管理员权限。</li>
+                    <li>4. 输入用户名、ZIP 路径和版本文件夹，点击“开始安装”。</li>
+                    <li>5. 安装完成后，桌面会出现“希沃白板大乱炖启动”快捷方式。</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">常见问题</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 class="text-lg font-semibold">、如何获取安装路径</h3>
+            </div>
+            <div class="faq-answer">
+                <p>找到你的希沃白板快捷方式，然后右键，打开文件所在位置，打开文件夹的上一个目录就是了，例如<br>
+                <code>C:\Program Files (x86)\Seewo\EasiNote5</code></p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 class="text-lg font-semibold">为什么需要管理员权限？</h3>
+            </div>
+            <div class="faq-answer">
+                <p>安装器需要修改系统文件（如 Program Files 目录），因此需要管理员权限。程序启动时会自动请求 UAC 权限。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 class="text-lg font-semibold">如何获取版本文件夹名称？</h3>
+            </div>
+            <div class="faq-answer">
+                <p>在希沃白板安装路径（如 C:\Program Files (x86)\Seewo\EasiNote5）下，找到类似 EasiNote5_5.2.4.8933 的文件夹名称，输入或从下拉菜单选择。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 页脚 -->
+    <footer class="footer text-center py-6">
+        <p>大乱炖已出锅，启动你的白板狂欢吧！</p>
+    </footer>
+
+    <script>
+        // FAQ 折叠效果
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
